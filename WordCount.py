@@ -147,9 +147,8 @@ class LatexWordCountCommand(sublime_plugin.TextCommand):
         sublime.message_dialog('''\
 Word count for %s
 
-Words:\t\t\t\t\t\t%d
-Characters (ignoring whitespace):\t%d
-Characters (with whitespace):\t%d
-Lines:\t\t\t\t\t\t%d
+Words:\t\t%d
+Characters:\t%d(%d)
+Lines:\t\t%d
 
 %s''' % (scope, words, chars, total_chars, lines, language))
